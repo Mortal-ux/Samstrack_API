@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subjects - SAMSTRACK</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2 style="text-align:center;">SAMSTRACK</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="students.html">Students</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <h1>Subjects</h1>
+    <form id="subjectForm">
+      <input type="text" id="subjectName" placeholder="Subject Name" required>
+      <button type="submit">Add Subject</button>
+    </form>
+
+    <h3>All Subjects</h3>
+    <table border="1" cellpadding="10" id="subjectsTable"></table>
+  </div>
+
+  <script src="js/subjects.js"></script>
+</body>
+</html>

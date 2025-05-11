@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance - SAMSTRACK</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2 style="text-align:center;">SAMSTRACK</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="students.html">Students</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <h1>Mark Attendance</h1>
+    <form id="attendanceForm">
+      <select id="studentSelect" required></select>
+      <select id="subjectSelect" required></select>
+      <select id="statusSelect" required>
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+      </select>
+      <button type="submit">Mark</button>
+    </form>
+
+    <h3>Attendance Records</h3>
+    <table border="1" cellpadding="10" id="attendanceTable"></table>
+  </div>
+
+  <script src="js/attendance.js"></script>
+</body>
+</html>
